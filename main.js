@@ -1,5 +1,5 @@
 function formatString(str) {
-    return str.replace(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g, '');
+    return str.replace(/[^a-zA-Z0-9\s]/g, "").split(" ");
 }
 
 function wordCounter(arr) {
