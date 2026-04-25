@@ -1,5 +1,5 @@
 function formatString(str) {
-    return str.replace(/[^a-zA-Z0-9\s]/g, "").split(" ");
+    return str.replace(/[^a-zA-Z0-9\s]/g, "").toLowerCase().split(" ");
 }
 
 function wordCounter(arr) {
